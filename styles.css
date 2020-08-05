@@ -1,0 +1,78 @@
+.body {
+    text-align: center;
+    background-color: #F5FFFA;
+}
+
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.input {
+    background-color: white;
+    border: 0px;
+    -moz-appearance: textfield;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.labels-group {
+    display: inline-block;
+}
+
+.scoreboard {
+    border: 1px solid black;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: linen;
+    padding: 5px 10px;
+}
+
+.teamscores {
+    border: 1px solid black;
+}
+
+.button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+    border: 1px solid black;
+    background-color: beige;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+.message {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: none;
+    color: green;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.label {
+    font-family: Arial, sans-serif;
+}
+
+.teamname {
+    font-family: Helvetica;
+}
+
+.teamscore {
+    font-family: Helvetica;
+}
+
+.team-dropdown-home {
+    display: inline-block
+}
+
+.team-dropdown-away {
+    display: inline-block;
+}

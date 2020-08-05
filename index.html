@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Baseball Simulator</title>
+</head>
+<body class="body">
+    <h1 class="heading">Baseball Simulator</h1>
+    <div class="team-dropdown-container">
+        <div class="team-dropdown-home" id="team-dropdown-home" class="dropdown-container">Home:
+            <select name="hometeamlist" id="select-list-home" class="dropdown">
+                <option value="null">---</option>
+                <option value="Diamondbacks">Arizona Diamondbacks</option>
+                <option value="Braves">Atlanta Braves</option>
+                <option value="Orioles">Baltimore Orioles</option>
+                <option value="Red Sox">Boston Red Sox</option>
+                <option value="Cubs">Chicago Cubs</option>
+                <option value="White Sox">Chicago White Sox</option>
+                <option value="Reds">Cincinnati Reds</option>
+                <option value="Indians">Cleveland Indians</option>
+                <option value="Rockies">Colorado Rockies</option>
+                <option value="Tigers">Detroit Tigers</option>
+                <option value="Astros">Houston Astros</option>
+                <option value="Royals">Kansas City Royals</option>
+                <option value="Angels">Los Angeles Angels</option>
+                <option value="Dodgers">Los Angeles Dodgers</option>
+                <option value="Marlins">Miami Marlins</option>
+                <option value="Brewers">Milwaukee Brewers</option>
+                <option value="Twins">Minnesota Twins</option>
+                <option value="Mets">New York Mets</option>
+                <option value="Yankees">New York Yankees</option>
+                <option value="Athletics">Oakland Athletics</option>
+                <option value="Phillies">Philadelphia Phillies</option>
+                <option value="Pirates">Pittsburgh Pirates</option>
+                <option value="Padres">San Diego Padres</option>
+                <option value="Giants">San Francisco Giants</option>
+                <option value="Mariners">Seattle Mariners</option>
+                <option value="Cardinals">St. Louis Cardinals</option>
+                <option value="Rays">Tampa Bay Rays</option>
+                <option value="Rangers">Texas Rangers</option>
+                <option value="Blue Jays">Toronto Blue Jays</option>
+                <option value="Nationals">Washington Nationals</option>
+            </select>
+        </div>
+        <div class="team-dropdown-away" id="team-dropdown-away" class="dropdown-container">Away:
+            <select name="awayteamlist" id="select-list-away" class="dropdown">
+                <option value="null">---</option>
+                <option value="Diamondbacks">Arizona Diamondbacks</option>
+                <option value="Braves">Atlanta Braves</option>
+                <option value="Orioles">Baltimore Orioles</option>
+                <option value="Red Sox">Boston Red Sox</option>
+                <option value="Cubs">Chicago Cubs</option>
+                <option value="White Sox">Chicago White Sox</option>
+                <option value="Reds">Cincinnati Reds</option>
+                <option value="Indians">Cleveland Indians</option>
+                <option value="Rockies">Colorado Rockies</option>
+                <option value="Tigers">Detroit Tigers</option>
+                <option value="Astros">Houston Astros</option>
+                <option value="Royals">Kansas City Royals</option>
+                <option value="Angels">Los Angeles Angels</option>
+                <option value="Dodgers">Los Angeles Dodgers</option>
+                <option value="Marlins">Miami Marlins</option>
+                <option value="Brewers">Milwaukee Brewers</option>
+                <option value="Twins">Minnesota Twins</option>
+                <option value="Mets">New York Mets</option>
+                <option value="Yankees">New York Yankees</option>
+                <option value="Athletics">Oakland Athletics</option>
+                <option value="Phillies">Philadelphia Phillies</option>
+                <option value="Pirates">Pittsburgh Pirates</option>
+                <option value="Padres">San Diego Padres</option>
+                <option value="Giants">San Francisco Giants</option>
+                <option value="Mariners">Seattle Mariners</option>
+                <option value="Cardinals">St. Louis Cardinals</option>
+                <option value="Rays">Tampa Bay Rays</option>
+                <option value="Rangers">Texas Rangers</option>
+                <option value="Blue Jays">Toronto Blue Jays</option>
+                <option value="Nationals">Washington Nationals</option>
+            </select>
+        </div>
+    </div>
+    <div id="error-message" class="error-message"></div>
+    <div class="labels-group">
+        <div class="label">
+            Inning <input type="number" id="inning" class="input" disabled>
+        </div>
+        <div class="label">
+            Outs <input type="number" id="outs" class="input" disabled>
+        </div>
+        <div class="label">
+            Balls <input type="number" id="balls" class="input" disabled>
+        </div>
+        <div class="label">
+            Strikes <input type="number" id="strikes" class="input" disabled>
+        </div>
+    </div>
+    <table id="scoreboard" class="scoreboard">
+        <tr id="team-names-scoreboard" class="teamnamesscoreboard">
+            <th class="teamname" id="home-team-name"></th>
+            <th class="teamname" id="away-team-name"></th>
+        </tr>
+        <tr id="team-scores" class="teamscores">
+            <td id="home-score" class="teamscore">0</td>
+            <td id="visitor-score" class="teamscore">0</td>
+        </tr>
+    </table>
+    <div id="winner-message" class="message"></div>
+    <button id="home-button" class="button">Home At Bat</button>
+    <button id="away-button" class="button" disabled>Away At Bat</button>
+    <div class="label">
+        1st Base: <input type="text" id="first-base" class="input" disabled>
+    </div>
+    <div class="label">
+        2nd Base: <input type="text" id="second-base" class="input" disabled>
+    </div>
+    <div class="label">
+        3rd Base: <input type="text" id="third-base" class="input" disabled>
+    </div>
+    <div>
+        <button id="play-again" class="button" disabled>Play Again?</button>
+    </div>
+    <script src="base-running.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
